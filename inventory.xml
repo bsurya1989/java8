@@ -1,0 +1,48 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header>
+        <kd4:KD4SoapHeaderV2 xmlns:kd4="http://www.ibm.com/KD4Soap" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">AFIAAgAkYTU2NTY4NGEtMjFmNS1iYzc5LWJlNGItM2RlMDE4NjQ2ZWUwACRjOTI0YjIyYi0yNWYxLTFlOGItMDlkYy0xMjMyNDZkYjAzNzIACA==</kd4:KD4SoapHeaderV2>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns0:GetRequiredArrangementInformationResponse xmlns:ns0="http://contracts.it.nednet.co.za/services/biz/arrangementmanagement/ArrangementManagement/v1" xmlns:ns1="commonj.sdo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <xci0:resultSet xmlns:xci0="http://contracts.it.nednet.co.za/services/biz/arrangementmanagement/ArrangementManagement/v1">
+                <xci0:resultCode>R00</xci0:resultCode>
+                <xci0:resultDescription>SUCCESS</xci0:resultDescription>
+            </xci0:resultSet>
+            <xci0:decisionDetail xmlns:xci0="http://contracts.it.nednet.co.za/services/biz/arrangementmanagement/ArrangementManagement/v1">
+                <ns7:arrangementActivities xmlns:ns9="http://contracts.it.nednet.co.za/services/ent/productandservicedevelopment/ChannelProductCatalogue/v1" xmlns:ns8="http://contracts.it.nednet.co.za/data/ent/Party/v4" xmlns:ns7="http://contracts.it.nednet.co.za/services/biz/arrangementmanagement/ArrangementManagement/v1" xmlns:ns10="http://www.nedbank.co.za/epa/bom/request" xmlns:dia3dr="http://www.fico.com/ps/dia3/core/bom/decisionrequest" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ahdr="http://www.nedbank.co.za/epa/bom/request" xmlns:io="http://contracts.it.nednet.co.za/services/ent/interactionenablers/evidence/v1" xmlns:v1="http://contracts.it.nednet.co.za/services/biz/arrangementmanagement/ArrangementManagement/v1" xmlns:io2="http://contracts.it.nednet.co.za/services/ent/productandservicedevelopment/ChannelProductCatalogue/v1" xmlns:ns0="wsdl.http://contracts.it.nednet.co.za/services/biz/arrangementmanagement/ArrangementManagement/v1">
+                    <ns7:arrangementID>600000160296</ns7:arrangementID>
+                    <ns7:requiredActivity>
+                        <ns7:activityType>ConfigureCollection</ns7:activityType>
+                        <ns7:collectionConfigurationDetail>
+                            <ns7:arrangementAction>Configure</ns7:arrangementAction>
+                            <ns7:collectionsMechanismOptionList>
+                                <ns7:collectionsMechanism>
+                                    <ns7:paymentMethodType>AMDO</ns7:paymentMethodType>
+                                    <ns7:priority>1</ns7:priority>
+                                    <ns7:selected>true</ns7:selected>
+                                </ns7:collectionsMechanism>
+                            </ns7:collectionsMechanismOptionList>
+                            <ns7:debiCheckConfig>
+                                <ns7:debitOrderPriority>ACD</ns7:debitOrderPriority>
+                                <ns7:trackingDays>10</ns7:trackingDays>
+                                <ns7:trackingIndicator>true</ns7:trackingIndicator>
+                                <ns7:adjustmentCategory>N</ns7:adjustmentCategory>
+                                <ns7:mandateType>FIXED</ns7:mandateType>
+                                <ns7:maximumCollectionAmount>9859.72</ns7:maximumCollectionAmount>
+                                <ns7:installmentOccurrance>RCUR</ns7:installmentOccurrance>
+                                <ns7:collectionDay>1</ns7:collectionDay>
+                                <ns7:authenicationMechanismList>
+                                    <ns7:authenticationMechanisim>
+                                        <ns7:debitOrderAuthentication>0230</ns7:debitOrderAuthentication>
+                                        <ns7:authenticationType>REAL TIME</ns7:authenticationType>
+                                        <ns7:priority>1</ns7:priority>
+                                    </ns7:authenticationMechanisim>
+                                </ns7:authenicationMechanismList>
+                            </ns7:debiCheckConfig>
+                        </ns7:collectionConfigurationDetail>
+                    </ns7:requiredActivity>
+                </ns7:arrangementActivities>
+            </xci0:decisionDetail>
+        </ns0:GetRequiredArrangementInformationResponse>
+    </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,42 @@
+<NS1:Envelope xmlns:NS1="http://schemas.xmlsoap.org/soap/envelope/">
+    <NS1:Header>
+        <kd4:KD4SoapHeaderV2 xmlns:kd4="http://www.ibm.com/KD4Soap" xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                             xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                             xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            AFIAAgAkNzZiZmUxMDctOGEwMC04OGRjLTEyYzUtOGE1MDBkYzZkNmIxACQ5MmEzYjkzNS1mMTk2LWQ0YWUtYWJlMC04NzEzZWZlNzFjMTIABA==
+        </kd4:KD4SoapHeaderV2>
+        <ent:EnterpriseContext xmlns:ent="http://contracts.it.nednet.co.za/Infrastructure/2008/09/EnterpriseContext"
+                               xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+                               xmlns:soap12="http://www.w3.org/2003/05/soap-envelope"
+                               xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <ent:ContextInfo>
+                <ent:ProcessContextId>1bc6a045-9ce8-4a2a-828f-9e88bf7f6e4f</ent:ProcessContextId>
+                <ent:ExecutionContextId>b29524df-61f7-45d3-b708-d1d068363e15</ent:ExecutionContextId>
+            </ent:ContextInfo>
+            <ent:RequestOriginator>
+                <ent:MachineIPAddress>10.59.115.84</ent:MachineIPAddress>
+                <ent:UserPrincipleName>AP411120</ent:UserPrincipleName>
+                <ent:MachineDNSName>zeb1swn1.it.nednet.co.za</ent:MachineDNSName>
+                <ent:ChannelId>397</ent:ChannelId>
+            </ent:RequestOriginator>
+            <ent:InstrumentationInfo>
+                <ent:ParentInstrumentationId>86280c9e-d0cc-4f4b-985a-d40c60630191</ent:ParentInstrumentationId>
+                <ent:ChildInstrumentationId>7a4e625e-6389-48a9-ae2c-ec0d66a709f6</ent:ChildInstrumentationId>
+            </ent:InstrumentationInfo>
+        </ent:EnterpriseContext>
+    </NS1:Header>
+    <NS1:Body>
+        <NS2:GetPartyAssociationsResponse
+                xmlns:NS2="http://contracts.it.nednet.co.za/services/app/clientprofilemanagement/PartyDueDiligenceAdaptor/v1">
+            <NS2:RequestId>cd049b77-1185-406c-968c-a03e320872de</NS2:RequestId>
+            <NS2:ResultSet>
+                <NS2:ResultCd>R01</NS2:ResultCd>
+                <NS2:BusinessRelationshipStatus/>
+                <NS2:ConditionCd>0</NS2:ConditionCd>
+                <NS2:CommentLine>Failed to update RiskCompliance for : 6</NS2:CommentLine>
+                <NS2:MsgDesc/>
+            </NS2:ResultSet>
+        </NS2:GetPartyAssociationsResponse>
+    </NS1:Body>
+</NS1:Envelope>

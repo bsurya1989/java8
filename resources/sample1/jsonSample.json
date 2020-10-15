@@ -1,0 +1,83 @@
+{
+  "resultSet": {
+    "resultCode": "R00",
+    "resultDescription": "SUCCESS"
+  },
+  "clientWorkItem": {
+    "Id": "NotUsedAnymore",
+    "LinkedEventId": "701ec937-3420-4142-9e1b-725127697e0f",
+    "LinkedECN": "600000364200",
+    "BusinessData": "{\"generatedByIntent\": \"GenerateOfferGatherClientDetails\", \"nextIntentToExecute\": \"GenerateOffer\",\"statusUpdatedTo\": \"EnrichPartyDetails\", \"eventData\":{\"breadcrumb\":{\"activitySteps\":[{\"StepName\":\"Product\"},{\"StepName\":\"Eligibility\"},{\"StepName\":\"Offer\"},{\"StepName\":\"Product Details\"},{\"StepName\":\"Documents\"}],\"currentActivityIndex\":1,\"processName\":\"Product Application\"},\"businessData\":[{\"ECN\":\"600000364200\",\"arrangementID\":\"null | 600000149875\",\"requiredInformation\":{\"requiredData\":[\"AdditionalPersonalInformation\",\"MaritalStatus\",\"EmploymentDetails\",\"IncomeDetails\",\"ExpensesBasic\",\"PreOfferFinePrint\"]}}],\"EventReason\":\"In order to Generate an offer for you, we need to know more about you\"}, \"completeEventName\":\"GenerateOfferPartyDetailsEnriched\"}",
+    "DisplayName": "Enrich Party Information",
+    "CaseId": "481904",
+    "CreatedOn": "2019-10-31T03:32:28.279+02"
+  },
+  "clientWorkItemUID": "701ec937-3420-4142-9e1b-725127697e0f",
+  "serviceExecutionMetrics": {
+    "serviceExecutionDetails": [
+      {
+        "serviceName": "ArrangementManagement",
+        "serviceOperation": "ArrangementBundleRiskAnalysis - determineCreditWorthiness",
+        "executionTimeInMS": 11538,
+        "runningAverageExecutionTimeInMS": 23597,
+        "runningMaxExecutionTimeInMS": 35657,
+        "invocationStartTime": 1572528733148,
+        "invocationEndTime": 1572528744686
+      },
+      {
+        "serviceName": "ArrangementManagement",
+        "serviceOperation": "DetermineRequiredArrangementInformation",
+        "executionTimeInMS": 1752,
+        "runningAverageExecutionTimeInMS": 2628,
+        "runningMaxExecutionTimeInMS": 16455,
+        "invocationStartTime": 1572528744689,
+        "invocationEndTime": 1572528746441
+      },
+      {
+        "serviceName": "ClientWorkItemManagement",
+        "serviceOperation": "CreateClientWorkItem",
+        "executionTimeInMS": 447,
+        "runningAverageExecutionTimeInMS": 776,
+        "runningMaxExecutionTimeInMS": 16946,
+        "invocationStartTime": 1572528746450,
+        "invocationEndTime": 1572528746897
+      },
+      {
+        "serviceName": "ArrangementPartyInformationService",
+        "serviceOperation": "RetrieveArrangement(s)",
+        "executionTimeInMS": 379,
+        "runningAverageExecutionTimeInMS": 328,
+        "runningMaxExecutionTimeInMS": 1138,
+        "invocationStartTime": 1572528746899,
+        "invocationEndTime": 1572528747278
+      },
+      {
+        "serviceName": "ArrangementPartyInformationService",
+        "serviceOperation": "RetrieveArrangement(s)",
+        "executionTimeInMS": 264,
+        "runningAverageExecutionTimeInMS": 296,
+        "runningMaxExecutionTimeInMS": 1138,
+        "invocationStartTime": 1572528747353,
+        "invocationEndTime": 1572528747617
+      },
+      {
+        "serviceName": "BAMService",
+        "serviceOperation": "trackInternalBAM",
+        "executionTimeInMS": 961,
+        "runningAverageExecutionTimeInMS": 781,
+        "runningMaxExecutionTimeInMS": 1704,
+        "invocationStartTime": 1572528747288,
+        "invocationEndTime": 1572528748249
+      },
+      {
+        "serviceName": "GetNextBestActionResource",
+        "serviceOperation": "getNextBestAction (End-to-End)",
+        "executionTimeInMS": 15188,
+        "runningAverageExecutionTimeInMS": 11517,
+        "runningMaxExecutionTimeInMS": 73767,
+        "invocationStartTime": 1572528733092,
+        "invocationEndTime": 1572528748280
+      }
+    ]
+  }
+}

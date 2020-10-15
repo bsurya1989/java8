@@ -1,0 +1,80 @@
+1. Lambda Expression
+   * To enable Functional Programming in Java
+   * To write more reliable, maintainable and concise code
+   * To use API easily and effectively
+   * To enable parallel processing
+   * A lambda expression is an anonymous(nameless) function
+        - which does not have name
+        - which does not have modifiers
+        - which does not have return type
+    Eg1 : public void m1() { sout("Hellooo") }
+        Lambda expression for above is () -> sout("Hellooo")
+    Eg2 : public int sum(int a, int b) { return a+b; }
+        Lambda expression for above is (a, b) -> a+b;
+        (or) Lambda expression for above is (a, b) -> {return (a+b);};
+
+
+2. Functional Interfaces
+   * Any interface that contains only Single Abstract Method(SAM) are called Functional Interfaces
+   * In functional interfaces we can have any number of default methods or any number of static methods but should only have SAM
+   * Predefined funtional interfaces are
+        Comparable - compareTo()
+        Runnable - run()
+        ActionListner - actionPerformed
+   * To invoke lambda expression we need to use Functional Interface
+Example below
+interface Interf {
+    int square(int n);
+}
+
+public class Test1FunctionalInterface {
+    public static void main(String[] args) {
+        Interf interf = n -> n*n;
+        System.out.println(interf.square(5));
+    }
+}
+
+3. Default methods inside interfaces
+   * We can provide concrete methods in interface with default keyword
+   * Use of default methods to provide dummy implementation
+   * If we want a new method without effecting multiple implementation classes then we can go for default method
+   * Eg: stream() is default method in Collection interface
+
+4. Static methods inside interfaces
+   * If there is a method which is not related to the object or class and is a static method then we can move that static method
+     to a interface
+   * For most of the Util classes can now be pushed to Util interfaces and can have static methods defined.
+   * Eg: InterfaceName.staticMethodName
+   * we can declare psvm method in interface
+
+5. Predefined Functional Interfaces introduced in Java 1.8 version
+   * All these new function interfaces are provided in java.util.function package
+        1. Predicate<T>
+            Take some input and perform some conditional check and returns boolean value then use PREDICATE -- test()
+        2. Function<T,R>
+            Take some input and perform some operation and return the result which is need not be boolean type then use FUNCTION -- apply()
+        3. Consumer<T>
+            Accept some input and perform required operation and not required to return anything then use CONSUMER -- accept()
+        4. Supplier<R>
+        Just supply my required objects and it won't take any input SUPPLIER -- get()
+
+6. ::(Double-colon) operator
+   * We have two references
+        1. Method reference
+        2. Constructor Reference
+
+        With method and constructor reference, already existing code can be used for implementing Functional Interfaces,
+        which allows code reusability.
+
+7. Streams
+   * Group of objects as a single entity is a Collection
+   * If we want to process objects from the Collection then we should go for Streams
+
+8. Date and Time API (Joda Time API)
+    * LocalDate
+    * LocalTime
+    * LocalDateTime
+    * Period
+    * Year
+    * ZoneId
+    * ZonedDateTime

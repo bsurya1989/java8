@@ -1,0 +1,71 @@
+Collections
+=====================
+Having all the individual objects as one entity then it is called Collections
+Eg: ArrayList<Student> students = new ArrayList<Student>();
+
+Streams
+=====================
+Process objects from collection then we can use Streams.
+Stream s = c.stream();
+
+* This stream() method is present in Collection interface as default method
+* Stream is an interface present in java.util.stream package introduced in Java 1.8 version
+
+Processing of Streams contains 2 steps
+1. Configuration
+    1.1 Filter Mechanism
+    1.2 Map Mechanism
+
+2. Processing
+    2.1 collect()
+
+
+Filter Mechanism
+====================
+* If we want to Filter the elements from collection based on some boolean condition then we should go with Filter mechnaism
+* We can configure Filter by using Filter method of Stream interface
+
+public Stream filter(Predicate<T> t)
+Eg: Stream s1 = collection.stream().filter(i->i%2==0);
+
+Map Mechanism
+===================
+* For every object create a separate new object for every object present in the collection based on some function then we can use Map Mechanism
+* We can implement mapping by using map() method of Stream interface
+
+public Stream map(Function<T,R> f)
+Eg: Stream s1 = collection.stream.map(i->i*2);
+
+
+Processing Streams
+==========================
+
+1. collect()
+    This method collects the elements from the stream and adding to the specified collection.
+
+2. count()
+    This method return the number of elements present in the Stream
+
+3. sorted()
+    * we can use sorted() method to sort elements inside stream
+    * we can sort either based on default natural sorting order or based on our own customised sorting order specified Comparator object
+    * There are two sort methods available
+        - sorted() --> for default natural sorting order which is Ascending order
+        - sorted(Comparator) --> sorted according to customised sorting order
+
+4. min() and max()
+    * These operations only work on sorted list
+    * min(Comparator c) --> returns minimum value according to specified comparator
+    * max(Comparator c) --> returns maximum value according to specified comparator
+
+5. foreach()
+    * This method won't return anything
+    * This method can take lambda expression as argument and apply that Lambda expression for each element present in the stream
+
+6.toArray()
+    * This method we can use to copy elements present in the stream into specified array
+
+7. Stream.of()
+    * we can also apply Stream for group of values and for arrays
+
+

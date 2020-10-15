@@ -1,0 +1,70 @@
+==================================
+How Lambda expression are written
+==================================
+A Lambda expression is written with out
+    1. remove modifier
+    2. remove return type
+    3. remove method name
+
+Eg: public void sum(int a, int b) { return a+b }
+    Lambda expression will be (int a, int b) -> {return a+b;};
+
+
+==========================================
+PREDICATE, FUNCTION, CONSUMER AND SUPPLIER
+==========================================
+
+The below three functional interfaces takes only one input parameter
+Predicate
+Function
+Consumer
+
+
+
+The below functional interface takes zero input parameters
+Supplier
+
+The below three functional interfaces takes two input parameters
+BiPredicate
+BiFunction
+BiConsumer
+
+Note: If you want to have more than two input parameters then you have to write your own custom Functional Interface
+
+Primitive Predicate Types
+==========================
+// Here in the above example there is autoboxing (int --> Integer) and AutoUnboxing (Integer --> int) is happening which
+// is going to reduce the performance of the code, so for that reason they have introduced
+// PRIMITIVE VERSION OF FUNCTIONAL INTERFACES which addresses this performance issues
+// It does not do anymore autoboxing and autounboxing
+// IntPredicate     --> always take int primitive type as input value
+// DoublePredicate  --> always take double primitive type as input value
+// LongPredicate    --> always take long primitive type as input value
+
+
+Primitive Function Types
+===========================
+DoubleFunction  --> can take input type as double and return type can be anytype
+IntFunction     --> can take input type as int and return type can be anytype
+LongFunction    --> can take input type as long and return type can be anytype
+
+DoubleToIntFunction     --> inputType is double and return type is int Eg: int applyAsInt(double value)
+DoubleToLongFunction    --> inputType is double and return type is long Eg: long applyAsLong(double value)
+IntToDoubleFunction
+IntToLongFunction
+
+=================================
+Method and Constructor Reference
+=================================
+An alternate to Lambda expressions is Method and Constructor Reference
+Eg: Test14Runnable.java is using lambda expression
+    Test15MethodReference is method reference example
+
+Method reference can be done on static and non-static methods
+Static method       --> classname::method_name
+NonStatic method    --> objectreference::method_name
+
+* In case of method reference different return types are allowed, but only restriction arguments types must be matched
+
+Now Constructor Reference
+Classname::new ==> This is Constructor Reference

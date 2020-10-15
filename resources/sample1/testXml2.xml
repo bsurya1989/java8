@@ -1,0 +1,95 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header>
+        <kd4:KD4SoapHeaderV2 xmlns:kd4="http://www.ibm.com/KD4Soap" xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                             xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            AFIAAgAkMTg5Y2RkMDctOWNiNy00NGJiLWJjMTEtMTEwNjBlNGM2NDRiACQyZTExZTQxMS1jYTEyLTU3YjgtMDU1YS1mNDQ0MTcwNmZmMmQABA==
+        </kd4:KD4SoapHeaderV2>
+        <ent:EnterpriseContext xmlns:ent="http://contracts.it.nednet.co.za/Infrastructure/2008/09/EnterpriseContext"
+                               xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+                               xmlns:soap12="http://www.w3.org/2003/05/soap-envelope"
+                               xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <ent:ContextInfo>
+                <ent:ProcessContextId>bc02a43f-1ddb-4edd-ab55-e42d5f60db6d</ent:ProcessContextId>
+                <ent:ExecutionContextId>da7ed20a-7083-4d26-bceb-dc997bdb95f1</ent:ExecutionContextId>
+            </ent:ContextInfo>
+            <ent:RequestOriginator>
+                <ent:MachineIPAddress>10.59.115.84</ent:MachineIPAddress>
+                <ent:UserPrincipleName>AP411120</ent:UserPrincipleName>
+                <ent:MachineDNSName>zeb1swn1.it.nednet.co.za</ent:MachineDNSName>
+                <ent:ChannelId>397</ent:ChannelId>
+            </ent:RequestOriginator>
+            <ent:InstrumentationInfo>
+                <ent:ParentInstrumentationId>a590db2a-47d7-41a4-b44a-960dbfbd5fcd</ent:ParentInstrumentationId>
+                <ent:ChildInstrumentationId>12873293-91d9-4468-bc0b-3db365cf7c0a</ent:ChildInstrumentationId>
+            </ent:InstrumentationInfo>
+        </ent:EnterpriseContext>
+    </soapenv:Header>
+    <soapenv:Body>
+        <msg:MaintainPersonDetailRes xmlns:dat="http://contracts.it.nednet.co.za/data/ent/Party/v3"
+                                     xmlns:msg="http://contracts.it.nednet.co.za/services/ent/profilemanagement/Party/v3">
+            <dat:ResponseControl>
+                <dat:ResultCode>FATAL</dat:ResultCode>
+                <dat:ServiceTime>2019-10-30T09:25:36.269263+02:00</dat:ServiceTime>
+                <dat:DWLControl>
+                    <dat:requesterName>ECLIPSE</dat:requesterName>
+                    <dat:requesterLanguage>100</dat:requesterLanguage>
+                    <dat:requesterLocale>en</dat:requesterLocale>
+                    <dat:customerRequestVersion>V3</dat:customerRequestVersion>
+                    <dat:externalCorrelationId>da7ed20a-7083-4d26-bceb-dc997bdb95f1</dat:externalCorrelationId>
+                    <dat:ControlExtensionProperty name="CompanyNumber">1001</dat:ControlExtensionProperty>
+                    <dat:ControlExtensionProperty name="CurrentTimeStamp">2019-10-30 09:25:36.229
+                    </dat:ControlExtensionProperty>
+                    <dat:ControlExtensionProperty name="XDcarTPCD">4270</dat:ControlExtensionProperty>
+                    <dat:ControlExtensionProperty name="ChannelId">365</dat:ControlExtensionProperty>
+                    <dat:ControlExtensionProperty name="SourceSystem">MDM</dat:ControlExtensionProperty>
+                    <dat:ControlExtensionProperty name="Interface">Online</dat:ControlExtensionProperty>
+                    <dat:pageStartIndex>0</dat:pageStartIndex>
+                    <dat:pageEndIndex>0</dat:pageEndIndex>
+                    <dat:returnAvailableResultCount>20</dat:returnAvailableResultCount>
+                    <dat:requestID>56789918243</dat:requestID>
+                </dat:DWLControl>
+            </dat:ResponseControl>
+            <dat:PersonDetailBObj>
+                <dat:DWLStatus>
+                    <dat:DWLError>
+                        <dat:ComponentType>1020431</dat:ComponentType>
+                        <dat:Detail>READERR</dat:Detail>
+                        <dat:ErrorMessage>Matching Record already exists for input business key :: XEXPENSESOURCE
+                        </dat:ErrorMessage>
+                        <dat:ErrorType>READERR</dat:ErrorType>
+                        <dat:ReasonCode>1020661</dat:ReasonCode>
+                        <dat:Severity>0</dat:Severity>
+                    </dat:DWLError>
+                    <dat:DWLError>
+                        <dat:ComponentType>1020431</dat:ComponentType>
+                        <dat:Detail>READERR</dat:Detail>
+                        <dat:ErrorMessage>Matching Record already exists for input business key :: XEXPENSESOURCE
+                        </dat:ErrorMessage>
+                        <dat:ErrorType>READERR</dat:ErrorType>
+                        <dat:ReasonCode>1020661</dat:ReasonCode>
+                        <dat:Severity>0</dat:Severity>
+                    </dat:DWLError>
+                    <dat:DWLError>
+                        <dat:ComponentType>1020431</dat:ComponentType>
+                        <dat:Detail>READERR</dat:Detail>
+                        <dat:ErrorMessage>Matching Record already exists for input business key :: XEXPENSESOURCE
+                        </dat:ErrorMessage>
+                        <dat:ErrorType>READERR</dat:ErrorType>
+                        <dat:ReasonCode>1020661</dat:ReasonCode>
+                        <dat:Severity>0</dat:Severity>
+                    </dat:DWLError>
+                    <dat:DWLError>
+                        <dat:ComponentType>1020431</dat:ComponentType>
+                        <dat:Detail>READERR</dat:Detail>
+                        <dat:ErrorMessage>Matching Record already exists for input business key :: XEXPENSESOURCE
+                        </dat:ErrorMessage>
+                        <dat:ErrorType>READERR</dat:ErrorType>
+                        <dat:ReasonCode>1020661</dat:ReasonCode>
+                        <dat:Severity>0</dat:Severity>
+                    </dat:DWLError>
+                </dat:DWLStatus>
+            </dat:PersonDetailBObj>
+        </msg:MaintainPersonDetailRes>
+    </soapenv:Body>
+</soapenv:Envelope>
